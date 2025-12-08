@@ -100,7 +100,7 @@ export default function HybridOfficerPage() {
       }}
     >
       {/* HERO SECTION */}
-      <div className="relative w-full h-[360px] sm:h-[420px] md:h-[480px]">
+      <div className="relative w-full h-[360px] sm:h-[420px] md:h-[480px] pt-[120px]">
         <img
           src="/images/hybrid-officer-development/gambarhod1.png"
           alt="Hero Background"
