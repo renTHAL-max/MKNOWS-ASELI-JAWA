@@ -1,6 +1,7 @@
 import { CardClientProps } from "@/Types/CardClient";
 import { CardHouseTrainingProps } from "@/Types/CardHouseTraining";
 
+// ambil db json
 const urlDB = process.env.NEXT_PUBLIC_DB_URL;
 
 export async function getStaticDataCardHouseTraining(): Promise<
@@ -10,6 +11,7 @@ export async function getStaticDataCardHouseTraining(): Promise<
     const res = await fetch(`${urlDB}/CardHouse`, {
       next: { revalidate: 3600 },
     });
+    console.log(res);
     return res.json();
   } catch (error) {
     console.error(error);

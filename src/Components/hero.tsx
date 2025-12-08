@@ -9,7 +9,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ title, subtitle, imageUrl }) => {
   return (
     <div
-      className="relative bg-cover bg-center h-[50vh] flex items-center justify-center text-center"
+      className="relative bg-cover bg-center h-[70vh] lg:h-[50vh] flex items-center justify-center text-center"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       {/* Overlay Gelap */}
@@ -17,10 +17,10 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, imageUrl }) => {
 
       {/* Konten Teks */}
       <div className="relative z-10 p-6 max-w-[1800px]">
-        <h1 className="text-3xl lg:text-[5xl] font-extrabold text-white mb-4 leading-tight">
+        <h1 className="text-xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 leading-tight">
           {title}
         </h1>
-        <p className="text-xl lg:text-2xl text-gray-200 font-medium">
+        <p className="text-md md:text-3xl lg:text-3xl text-gray-200 font-medium">
           {subtitle}
         </p>
       </div>
