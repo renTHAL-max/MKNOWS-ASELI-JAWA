@@ -30,7 +30,7 @@ const SearchMateri = ({ staticDataMateri }: { staticDataMateri: Materi[] }) => {
       <div className="flex flex-col justify-center items-center px-3 py-3">
         <div className="flex flex-col justify-center items-center pt-2.5 pt-[180px]">
           <h1 className="capitalize font-montserrat font-bold text-[25px] md:text-[48px] lg:text-[48px]">
-            public training tahun 2026
+            public training tahun 2027
           </h1>
           <SearchContext.Provider value={{ keyword, setKeyword }}>
             <SearchForm name="search" />
@@ -77,7 +77,7 @@ const SearchMateri = ({ staticDataMateri }: { staticDataMateri: Materi[] }) => {
           <Link href="/training/contact" className="no-underline">
             <button className="border bg-[#ffff] px-5 py-2 text-center rounded-[20px] bg-green-600 hover:bg-green-700 hover:translate-y-[-20px]">
               <p className="font-montserrat font-regular text-[16px] lg:text-[32px] text-white">
-                Download Jadwal Public Training Tahun 2026
+                Download Jadwal Public Training Tahun 2027
               </p>
             </button>
           </Link>

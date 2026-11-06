@@ -3,7 +3,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
 import Footer from "@/Components/Footer";
-import ChatButton from "@/Components/ChatButton";
 
 // metadata profile url
 // export const metadata: Metadata = {
@@ -31,10 +30,9 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
       </head>
-      <body className={`min-h-screen overflow-x-hidden`}>
+      <body className="min-h-screen overflow-x-hidden">
         <Navbar />
         {children}
-        <ChatButton />
         <Footer />
       </body>
     </html>

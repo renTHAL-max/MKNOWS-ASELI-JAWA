@@ -37,33 +37,12 @@ const contactFields = [
     required: true,
     placeholder: "Ketik Email Anda Disini",
   },
-  {
-    name: "kategori",
-    label: "Kategori",
-    type: "select",
-    required: true,
-    defaultValue: "training",
-    placeholder: "Pilih Kategori",
-    options: [
-      { value: "training", label: "Training" },
-      { value: "konsultasi", label: "Konsultasi" },
-      { value: "assessment", label: "Assessment" },
-      { value: "lainnya", label: "Lainnya" },
-    ],
-  },
-  {
-    name: "deskripsi",
-    type: "textarea",
-    label: "Deskripsi",
-    required: true,
-    placeholder: "Ketik Deskripsi Anda Disini",
-  },
 ];
 
 const page = () => {
   return (
     <React.Fragment>
-      <ContactWrapper fields={contactFields}></ContactWrapper>;
+      <ContactWrapper fields={contactFields}></ContactWrapper>
     </React.Fragment>
   );
 };

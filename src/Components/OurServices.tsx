@@ -186,7 +186,7 @@ Tingkatkan bisnis anda dengan Content Creation berkualitas tinggi! Konten yang b
 
       {/* ===== Tabs ===== */}
       <div className="w-full overflow-x-auto whitespace-nowrap mb-8">
-        <div className="bg-white border border-gray-300 rounded-2xl shadow-md flex flex-nowrap justify-center items-center gap-2 overflow-x-auto w-max mx-auto">
+        <div className="flex flex-nowrap justify-center items-center gap-1 overflow-x-auto w-max mx-auto">
           {[
             {
               key: "training",
@@ -199,11 +199,11 @@ Tingkatkan bisnis anda dengan Content Creation berkualitas tinggi! Konten yang b
             <button
               key={key}
               onClick={() => setActiveTab(key)}
-              className={`overflow-x-auto flex justify-center items-center gap-2 px-2 py-2 md:px-5 md:py-4 lg:px-5 lg:py-3 text-[12px] md:text-[18px] lg:text-[30px] font-montserrat font-semibold transition-all
+              className={`overflow-x-auto flex justify-center items-center gap-2 px-2 py-2 md:px-5 md:py-4 lg:px-5 lg:py-3 text-[12px] md:text-[18px] lg:text-[30px] font-montserrat font-semibold transition-all rounded-2xl border shadow-md
           ${
             activeTab === key
-              ? "bg-[#4697CE] text-white rounded-xl"
-              : "text-[#7A7A7A] hover:bg-[#E3F2FD]"
+              ? "bg-[#4697CE] text-white border-[#4697CE]"
+              : "bg-white text-[#7A7A7A] border-gray-300 hover:bg-[#E3F2FD]"
           }`}
             >
               {icon}
@@ -214,11 +214,11 @@ Tingkatkan bisnis anda dengan Content Creation berkualitas tinggi! Konten yang b
       </div>
 
       {/* ========================= KONTEN ========================= */}
-      <div className="max-w-6xl mx-auto text-[24px] px-4 md:px-6 mt-12">
+      <div className="max-w-6xl mx-auto text-[24px] px-4 md:px-6 mt-12 pb-20 lg:pb-40">
         {/* ========================= TRAINING ========================= */}
         {activeTab === "training" && (
-          <div className="flex flex-col items-center gap-8">
-            <div className="flex gap-8 justify-center flex-wrap">
+          <div className="flex flex-col items-center gap-8 lg:gap-10">
+            <div className="flex gap-6 lg:gap-8 justify-center flex-wrap">
               <ServiceCard
                 href="/training/public-in-house-training"
                 icon={
@@ -241,7 +241,7 @@ Tingkatkan bisnis anda dengan Content Creation berkualitas tinggi! Konten yang b
               />
             </div>
 
-            <div className="flex gap-8 justify-center flex-wrap">
+            <div className="flex gap-6 lg:gap-8 justify-center flex-wrap">
               <ServiceCard
                 href="/training/lms"
                 icon={
@@ -262,37 +262,39 @@ Tingkatkan bisnis anda dengan Content Creation berkualitas tinggi! Konten yang b
 
         {/* ========================= CONSULTING ========================= */}
         {activeTab === "consulting" && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center ipad-grid-3">
-            <ServiceCard
-              href="/consulting/brand-consulting"
-              icon={<FaBuilding className="text-green-500 text-4xl mb-4" />}
-              title="Brand Consulting"
-              text="Pembuatan & penguatan identitas brand."
-            />
-            <ServiceCard
-              href="/consulting/executive-coaching"
-              icon={<FaUserTie className="text-green-500 text-4xl mb-3" />}
-              title="Executive Coaching"
-              text="Program pengembangan personal bagi eksekutif."
-            />
-            <ServiceCard
-              href="/consulting/hybrid-officer-development"
-              icon={<FaUsersCog className="text-green-500 text-4xl mb-3" />}
-              title="Hybrid Officer Development"
-              text="Seleksi, pelatihan, coaching & counseling."
-            />
-            <ServiceCard
-              href="/consulting/assessment-technical-competency"
-              icon={<FaAward className="text-green-500 text-4xl mb-3" />}
-              title="Assessment Competency"
-              text="Pembuatan kamus & assessment kompetensi teknis."
-            />
+          <div className="flex flex-col items-center gap-8 lg:gap-10">
+            <div className="flex gap-6 lg:gap-8 justify-center flex-wrap">
+              <ServiceCard
+                href="/consulting/brand-consulting"
+                icon={<FaBuilding className="text-green-500 text-4xl mb-4" />}
+                title="Brand Consulting"
+                text="Pembuatan & penguatan identitas brand."
+              />
+              <ServiceCard
+                href="/consulting/executive-coaching"
+                icon={<FaUserTie className="text-green-500 text-4xl mb-3" />}
+                title="Executive Coaching"
+                text="Program pengembangan personal bagi eksekutif."
+              />
+              <ServiceCard
+                href="/consulting/hybrid-officer-development"
+                icon={<FaUsersCog className="text-green-500 text-4xl mb-3" />}
+                title="Hybrid Officer Development"
+                text="Seleksi, pelatihan, coaching & counseling."
+              />
+              <ServiceCard
+                href="/consulting/assessment-technical-competency"
+                icon={<FaAward className="text-green-500 text-4xl mb-3" />}
+                title="Assessment Competency"
+                text="Pembuatan kamus & assessment kompetensi teknis."
+              />
+            </div>
           </div>
         )}
 
         {/* ========================= DIGITALISASI (POPUP VERSION) ========================= */}
         {activeTab === "digitalisasi" && (
-          <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col items-center gap-8 lg:gap-10">
             <div className="flex gap-8 flex-wrap justify-center ipad-grid-3">
               <ServiceCardModal
                 icon={<FaRobot className="text-green-500 text-4xl mb-3" />}
@@ -373,13 +375,13 @@ function ServiceCard({
   text: string;
 }) {
   return (
-    <Link href={href} className="flex justify-center">
-      <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition border border-gray-200 hover:border-[#4697CE] cursor-pointer flex flex-col items-center text-center w-[260px] h-[250px] md:w-[300px]">
+    <Link href={href} className="flex justify-center m-2">
+      <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition border-[3px] border-gray-300 hover:border-gray-400 cursor-pointer flex flex-col items-center text-center w-[240px] h-[240px] md:w-[280px] md:h-[240px]">
         {icon}
-        <h3 className="text-[#4697CE] text-[20px] font-montserrat mb-2 font-semibold">
+        <h3 className="text-[#4697CE] text-[18px] md:text-[20px] font-montserrat mb-2 font-semibold">
           {title}
         </h3>
-        <p className="text-black font-montserrat text-[16px]">{text}</p>
+        <p className="text-black font-montserrat text-[14px] md:text-[16px]">{text}</p>
       </div>
     </Link>
   );
@@ -402,13 +404,13 @@ function ServiceCardModal({
   return (
     <div
       onClick={onClick}
-      className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition border border-gray-200 hover:border-[#4697CE] cursor-pointer flex flex-col items-center text-center w-[260px] h-[250px] md:w-[300px]"
+      className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition border-[3px] border-gray-300 hover:border-gray-400 cursor-pointer flex flex-col items-center text-center w-[240px] h-[240px] md:w-[280px] md:h-[240px] m-2"
     >
       {icon}
-      <h3 className="text-[#4697CE] text-[20px] font-montserrat mb-2 font-semibold">
+      <h3 className="text-[#4697CE] text-[18px] md:text-[20px] font-montserrat mb-2 font-semibold">
         {title}
       </h3>
-      <p className="text-black font-montserrat text-[16px]">{text}</p>
+      <p className="text-black font-montserrat text-[14px] md:text-[16px]">{text}</p>
     </div>
   );
 }

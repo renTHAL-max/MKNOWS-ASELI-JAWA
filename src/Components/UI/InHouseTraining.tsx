@@ -56,79 +56,84 @@ const InHouseTraining = ({
             In-House Training
           </h1>
         </div>
-        <h3 className="text-[#ffff] font-poppins text-[26px] md:text-[24px] lg:text-[30px] w-[400px] md:w-[500px] lg:w-[1465px] text-justify md:text-justify lg:text-center px-2 py-2 lg:px-5 lg:py-3">
+        <p className="text-white font-poppins text-[16px] md:text-[18px] lg:text-[20px] w-[380px] md:w-[650px] lg:w-[1100px] text-center leading-[1.8] px-4 py-3">
           In House Training merupakan program pelatihan yang diselenggarakan
-          oleh M-KNOWS CONSULTING bekerjasama dengan Perusahaan atau Instansi
+          oleh <span className="font-semibold">M-KNOWS CONSULTING</span> bekerjasama dengan Perusahaan atau Instansi
           pemerintah untuk meningkatkan skill karyawan sehingga meningkatkan
           keunggulan kompetitif di bidang Sumberdaya Manusia dengan materi,
           contoh studi kasus dan konsep pelaksanaan yang dikustomisasi sesuai
           kebutuhan perusahaan atau instansi.
-        </h3>
+        </p>
       </div>
-      <div className="flex flex-col justify-center items-center pt-[250px] text-center lg:pt-[34px] md:pt-[40px] pb-[40px] gap-y-[20px]">
-        <h1 className="font-montserrat font-bold text-[48px]">
+      {/* About Program Section */}
+      <div className="flex flex-col justify-center items-center pt-[100px] md:pt-[60px] lg:pt-[80px] pb-[60px] px-5 bg-gray-50">
+        <h1 className="font-montserrat font-bold text-[32px] md:text-[40px] lg:text-[48px] text-[#02353C] mb-8 text-center">
           Tentang Program
         </h1>
-        <p className="font-poppins text-[28px] max-w-[1300px]">
+        <p className="font-poppins text-[16px] md:text-[18px] lg:text-[20px] max-w-[1000px] text-center leading-[1.9] text-gray-800 px-4">
           Kami membantu mendesain konsep training, kurikulum, materi, dan jadwal
           yang dapat disesuaikan dengan kebutuhan perusahaan. Pelatihan dapat
           dilaksanakan di lokasi Anda maupun secara hybrid.
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row gap-x-[72px] justify-center items-center gap-y-[40px] pb-[40px] px-5">
-        <div className="card w-[360px] lg:w-[550px] md:w-[560px] h-full rounded-[10px] bg-[#ffff] px-5 py-2 shadow-[0px_4px_4px_0px_#557B67]">
-          <p className="font-montserrat font-semibold text-[24px] pb-[22px] pt-[28px]">
+
+      {/* Experience Cards */}
+      <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch pb-[80px] px-5 max-w-[1100px] mx-auto">
+        <div className="flex-1 rounded-xl bg-white p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+          <h3 className="font-montserrat font-bold text-[20px] md:text-[22px] text-[#02353C] mb-5">
             Pengalaman sejak 2003
-          </p>
-          <p className="font-poppins font-light text-[24px]">
+          </h3>
+          <p className="font-poppins text-[15px] md:text-[16px] lg:text-[17px] text-gray-700 leading-[1.8]">
             Menyelenggarakan in‑house training di banyak perusahaan dan instansi
             pemerintah. Metode singkat, padat, dan praktis langsung dapat
             diterapkan setelah pelatihan.
           </p>
         </div>
-        <div className="card w-[360px] lg:w-[550px] md:w-[560px] h-full rounded-[10px] bg-[#ffff] px-5 py-2 shadow-[0px_4px_4px_0px_#557B67]">
-          <p className="font-montserrat font-semibold text-[24px] pb-[22px] pt-[28px]">
+        
+        <div className="flex-1 rounded-xl bg-white p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+          <h3 className="font-montserrat font-bold text-[20px] md:text-[22px] text-[#02353C] mb-5">
             Durasi Fleksibel
-          </p>
-          <p className="font-poppins font-light text-[24px]">
+          </h3>
+          <p className="font-poppins text-[15px] md:text-[16px] lg:text-[17px] text-gray-700 leading-[1.8]">
             Kelas kecil (10–20 orang) hingga kelas besar (50+). Jadwal & materi
             disesuaikan kebutuhan. Tersedia program pasca pelatihan melalui LMS
             selama 3 bulan.
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-y-[50px] px-5 pt-[90px] pb-[123px] bg-[#245454]">
-        <p className="capitalize font-montserrat font-bold text-[30px] md:text-[40px] lg:text-[48px] text-white">
-          kenapa in-house training kami
-        </p>
-        <div className="flex flex-col md:flex-col lg:flex-row justify-center items-center gap-x-5 gap-y-5">
+      {/* Why Choose Us Section */}
+      <div className="flex flex-col justify-center items-center gap-y-[50px] px-5 py-[90px] bg-[#245454]">
+        <h2 className="font-montserrat font-bold text-[28px] md:text-[36px] lg:text-[44px] text-white text-center">
+          Kenapa In-House Training Kami
+        </h2>
+        <div className="flex flex-col md:flex-col lg:flex-row justify-center items-stretch gap-6 max-w-[1300px] w-full">
           {data.length > 0 &&
             data.map((item) => <CardHouseTraining key={item.id} {...item} />)}
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-y-5 pt-[92px] pb-[18px]">
-        <p className="capitalize font-montserrat font-bold text-[48px]">
-          our client
-        </p>
-        <div className="card rounded-[30px] w-[500px] md:w-[700px] lg:w-[1024px] h-full bg-[#ffff] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] flex justify-center items-center p-5">
+      {/* Our Clients Section */}
+      <div className="flex flex-col justify-center items-center gap-y-8 py-[90px] px-5">
+        <h2 className="font-montserrat font-bold text-[32px] md:text-[40px] lg:text-[48px] text-[#02353C]">
+          Our Clients
+        </h2>
+        <div className="rounded-2xl w-full max-w-[1100px] bg-white shadow-xl border border-gray-100 p-8">
           {dataClient.length > 0 && (
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 justify-center items-center right-0 left-0 mx-auto gap-y-5 gap-x-5 p-3">
+            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center items-center">
               {dataClient.map((item) => (
                 <CardClient key={item.id} {...item} />
               ))}
             </div>
           )}
         </div>
-      </div>
-      <div className="flex justify-center items-center left-0 right-0 mx-auto pb-[50px] pt-[20px]">
-        <button className="px-3 py-3 bg-[#6DEA6A] rounded-[10px] w-[215px] border border-[#424242]">
-          <div className="flex justify-center items-center gap-x-[5px]">
-            <a href="/more/clients-page">
-              <p className="font-manrope font-bold text-[14px]">View More</p>
-            </a>
-            <FaArrowAltCircleRight className="text-[20px]" />
-          </div>
-        </button>
+        
+        {/* View More Button */}
+        <a 
+          href="/more/clients-page"
+          className="mt-6 px-8 py-4 bg-[#70B946] hover:bg-[#5fa037] rounded-xl text-white font-montserrat font-bold text-[16px] shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group"
+        >
+          <span>View More Clients</span>
+          <FaArrowAltCircleRight className="text-[20px] group-hover:translate-x-1 transition-transform" />
+        </a>
       </div>
     </section>
   );

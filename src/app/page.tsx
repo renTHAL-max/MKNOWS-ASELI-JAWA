@@ -94,7 +94,7 @@ export default function Home() {
       </section>
 
       {/* Statistics */}
-      <div className="pb-[80px] flex flex-col md:flex-col sm:flex-col justify-center items-center gap-y-[40px]">
+      <div className="flex flex-col md:flex-col sm:flex-col justify-center items-center gap-y-[40px]">
         <section className="bg-white text-center">
           <div className="mx-auto text-center w-full md:w-[80%] lg:w-full">
             <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold mb-6">

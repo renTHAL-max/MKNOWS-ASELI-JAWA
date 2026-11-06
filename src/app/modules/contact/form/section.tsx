@@ -43,8 +43,8 @@ const ContactSection = () => {
 
     const link = document.createElement("a");
     link.href =
-      "/utility/xlsx/Jadwal_Public_Training_M-Knows_Consulting_2026.xlsx";
-    link.download = "Jadwal_Public_Training_M-Knows_Consulting_2026.xlsx";
+      "/utility/xlsx/Jadwal_Public_Training_M-Knows_Consulting_2027.xlsx";
+    link.download = "Jadwal_Public_Training_M-Knows_Consulting_2027.xlsx";
     link.click();
     link.remove();
   };

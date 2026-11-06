@@ -50,13 +50,13 @@ const page = () => {
           />
         </a>
 
-        {/* TEXT COLUMN */}
+        {/* TEXT COLUMN - Same width as image cards */}
         <div className="flex flex-col justify-center gap-4 md:col-span-2 lg:col-span-1">
           <h1 className="font-montserrat font-bold text-[24px] md:text-[32px] lg:text-[28px] w-full">
             Pelatihan Fleksibel, Hasil Terukur
           </h1>
 
-          <p className="font-poppins text-[20px] md:text-[25px] lg:text-[28px] leading-relaxed text-justify w-full md:w-full lg:w-[450px]">
+          <p className="font-poppins text-[20px] md:text-[25px] lg:text-[28px] leading-relaxed text-justify w-full">
             Pilih kelas publik terjadwal untuk belajar cepat & networking, atau
             sesi in-house yang disesuaikan kebutuhan tim. Materi aplikatif,
             fasilitator praktisi, standar industri terkini.
